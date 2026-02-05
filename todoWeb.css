@@ -1,0 +1,48 @@
+body {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    background-image: url("immg9.jpg");
+    background-size: cover;
+    /* overflow-y: scroll; */
+}
+
+
+.del {
+    margin: 5px;
+
+}
+
+.delLater {
+    margin: 5px;
+    margin-left: 8px;
+}
+
+.box {
+    position: fixed;
+    padding: 30px;
+    padding-top: 0.5px;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.7);
+    /* background-color: rgb(230, 219, 219); */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px grey;
+}
+
+h1 {
+    color: rgb(13, 86, 86);
+}
+
+.msg {
+    position: relative;
+    top: 200px;
+}
+
+.mainBtn {
+    margin-left: 5px;
+}
+
+.mainBtn:hover {
+    background-color: #d59d88;
+    color: white;
+}
