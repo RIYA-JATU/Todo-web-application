@@ -8,6 +8,7 @@ btn.addEventListener("click", function () {
         addTask();
     }
 });
+
 inp.addEventListener("keypress", function (event) {
     if (event.key == "Enter" && inp.value != "") {
         addTask();
@@ -18,18 +19,21 @@ inp.addEventListener("keypress", function (event) {
 function addTask() {
     let item = document.createElement("li");
     let delBtn = document.createElement("button");
-    item.innerText = inp.value;
+
+    let value = inp.value.charAt(0).toUpperCase() + inp.value.slice(1);
+    item.innerText = value;
     delBtn.innerText = "Delete";
     ul.append(item);
     item.appendChild(delBtn);
     // Add class in delBtns which will be add later..
     delBtn.classList.add("del");
     delBtn.classList.add("delLater");
+    delBtn.classList.add('btn', 'btn-outline-danger', 'btn-sm');
 
     // to refresh input box..
     inp.value = "";
 
-    // agar msg hai toh task add hote hi use hata do..
+    // agar hurray vala msg hai toh task add hote hi use hata do..
     let msg = document.querySelector(".msg");
     if (msg) {
         msg.remove();
