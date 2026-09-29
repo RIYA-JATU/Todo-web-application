@@ -14,6 +14,7 @@ This project helped me practice DOM methods, event handling, and basic JavaScrip
 - HTML
 - CSS
 - JavaScript (DOM Manipulation)
+- Bootstrap
 
 ## How to Use
 1. Clone or download the repository
